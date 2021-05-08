@@ -1,0 +1,88 @@
+{
+	// Messages
+	"entries": [
+		{
+			// Identifier for a channel within Discord to observe
+			"id": 0,
+			// If non-empty, reduces the scope of all events to the listed Minecraft dimension IDs (e.g. 'minecraft:the_nether')
+			"dimensions": [],
+			// Minecraft events relayed to Discord
+			"discord": {
+				/* A player sent an in-game message
+				   Use ${username}, ${player}, ${message}, ${world} and ${datetime[:format]}
+				*/
+				"chat": "`${world}` **${player}** > ${message}",
+				/* A player died
+				   Use ${username}, ${player}, ${cause}, ${world}, ${x}, ${y}, ${z}, ${score}, ${exp}, ${lifespan[:format]} and ${datetime[:format]}
+				*/
+				"death": "**${player}** ${cause}!\n:skull: _${world} | ${x}, ${y}, ${z}_",
+				/* A named animal/monster (with name tag) died (requires Chatter World game-rule)
+				   Use ${name}, ${cause}, ${world}, ${x}, ${y}, ${z} and ${datetime[:format]}
+				*/
+				"grief": "**${name}** ${cause}! :coffin:",
+				/* A player unlocked an advancement
+				   Use ${username}, ${player}, ${type}, ${title}, ${description} and ${datetime[:format]}
+				*/
+				"advancement": "**${player}** completed the ${type} **${title}**! :clap:\n_${description}_",
+				/* A player teleported to another dimension
+				   Use ${username}, ${player}, ${origin}, ${destination} and ${datetime[:format]}
+				*/
+				"teleport": "**${player}** entered ${destination}. :cyclone:",
+				/* A player joined the game
+				   Use ${username}, ${player}, ${world} and ${datetime[:format]}
+				*/
+				"join": "**${player}** joined!",
+				/* A player left the game
+				   Use ${username}, ${player}, ${world}, ${elapsed[:format]} and ${datetime[:format]}
+				*/
+				"leave": "**${player}** left!",
+				/* The server began to start
+				   Use ${datetime[:format]}
+				*/
+				"starting": "Server is starting... :fingers_crossed:",
+				/* The server started and is accepting connections
+				   Use ${uptime[:format]} and ${datetime[:format]}
+				*/
+				"started": "Server started (took ${uptime:s.SSS}s) :ok_hand:",
+				/* The server began to stop
+				   Use ${uptime[:format]} and ${datetime[:format]}
+				*/
+				"stopping": "Server is stopping... :raised_hand:",
+				/* The server stopped and is offline
+				   Use ${uptime[:format]} and ${datetime[:format]}
+				*/
+				"stopped": "Server stopped! :no_entry:",
+				/* The server stopped unexpectedly and is inaccessible
+				   Use ${reason}, ${uptime[:format]} and ${datetime[:format]}
+				*/
+				"crashed": "Server crash detected! :warning:\n_${reason}_",
+				// True if a crash report is attached to the server crashed message
+				"uploadCrashReport": false
+			},
+			// Discord events relayed to Minecraft
+			"minecraft": {
+				/* A user sent a message
+				   NB: Use JSON style, check out https://minecraftjson.com/ (third party)
+				   Use ${author}, ${tag}, ${username}, ${discriminator}, ${message} and ${datetime[:format]}
+				*/
+				"chat": "[\"\",{\"text\":\"${author}\",\"color\":\"#00aaff\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"@${tag} \"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Sent from Discord\",\"italic\":true}]}},{\"text\":\" > \",\"color\":\"dark_gray\"},{\"text\":\"${message}\"}]",
+				/* A user edited their recently sent message
+				   Use ${author}, ${tag}, ${username}, ${discriminator}, ${diff}, ${original}, ${message} and ${datetime[:format]}
+				*/
+				"edit": "[\"\",{\"text\":\"${author}\",\"color\":\"#00aaff\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"@${tag} \"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Sent from Discord\",\"italic\":true}]}},{\"text\":\" > \",\"color\":\"dark_gray\"},{\"text\":\"${diff}\"}]",
+				/* A user reacted to a recent message
+				   Use ${issuer}, ${issuer_tag}, ${issuer_username}, ${issuer_discriminator}, ${author}, ${author_tag}, ${author_username}, ${author_discriminator}, ${emote} and ${datetime[:format]}
+				*/
+				"react": "[\"\",{\"text\":\"${issuer}\",\"color\":\"#00aaff\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"@${issuer_tag} \"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Sent from Discord\",\"italic\":true}]}},{\"text\":\" reacted with \"},{\"text\":\"${emote}\",\"color\":\"green\"},{\"text\": \" to \"},{\"text\":\"${author}\",\"color\":\"#00aaff\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"@${author_tag} \"}},{\"text\":\"'s message\"}]",
+				/* A user removed their reaction from a recent message
+				   Use ${issuer}, ${issuer_tag}, ${issuer_username}, ${issuer_discriminator}, ${author}, ${author_tag}, ${author_username}, ${author_discriminator}, ${emote} and ${datetime[:format]}
+				*/
+				"unreact": "[\"\",{\"text\":\"${issuer}\",\"color\":\"#00aaff\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"@${issuer_tag} \"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Sent from Discord\",\"italic\":true}]}},{\"text\":\" removed their reaction of \"},{\"text\":\"${emote}\",\"color\":\"red\"},{\"text\": \" from \"},{\"text\":\"${author}\",\"color\":\"#00aaff\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"@${author_tag} \"}},{\"text\":\"'s message\"}]",
+				/* A user sent a message that contained attachments
+				   Use ${author}, ${tag}, ${username}, ${discriminator}, ${url}, ${name}, ${ext}, ${size} and ${datetime[:format]}
+				*/
+				"attachment": "[\"\",{\"text\":\"${author}\",\"color\":\"#00aaff\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"@${tag} \"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Sent from Discord\",\"italic\":true}]}},{\"text\":\" > \",\"color\":\"dark_gray\"},{\"text\":\"${name}\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"${url}\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"${ext} (${size})\"}}}]"
+			}
+		}
+	]
+}

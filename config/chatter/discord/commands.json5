@@ -1,0 +1,97 @@
+{
+	// True if any commands should be available for use
+	"enabled": true,
+	// Message prefix used in Discord to trigger commands
+	"prefix": "!",
+	// If defined, exposes a command to display help
+	"helpWord": "help",
+	// Identifiers for users within Discord to whom to grant all permissions
+	"admins": [],
+	// Feedback provided to the user who triggered a command
+	"messages": {
+		// The error message used when the server is unavailable
+		"unavailable": "The server is not yet ready - please wait. :warning:"
+	},
+	// Built-in Discord commands
+	"builtin": {
+		// Displays for how long the Minecraft server has been online
+		"uptime": {
+			/* A message template that is formatted and sent for the server's uptime
+			   Use ${uptime[:format]} for the duration
+			*/
+			"message": "The server has been online for ${uptime} :hourglass_flowing_sand:",
+			// True if the command should be available for use
+			"enabled": true,
+			// Trigger name for the command
+			"name": "uptime",
+			// Any alternative trigger names for the command
+			"aliases": [],
+			// A brief description of what the command does
+			"help": "Shows for how long the server has been online",
+			// Details the correct usage of the command, e.g. <username> [count]
+			"usage": null,
+			// True if the command should be hidden from help messages
+			"hidden": false,
+			// If defined, restricts access to Discord users with the given role identifier or name
+			"role": null,
+			// The number of seconds a user must wait before using the command again
+			"cooldown": 0,
+			// To whom the cooldown applies (see https://git.io/JtpsJ)
+			"cooldownScope": "USER"
+		},
+		// Displays the Minecraft server's current ticks per second
+		"tps": {
+			// True if the command should be available for use
+			"enabled": true,
+			// Trigger name for the command
+			"name": "tps",
+			// Any alternative trigger names for the command
+			"aliases": [
+				"ticks"
+			],
+			// A brief description of what the command does
+			"help": "Shows the server's current ticks per second",
+			// Details the correct usage of the command, e.g. <username> [count]
+			"usage": null,
+			// True if the command should be hidden from help messages
+			"hidden": false,
+			// If defined, restricts access to Discord users with the given role identifier or name
+			"role": null,
+			// The number of seconds a user must wait before using the command again
+			"cooldown": 10,
+			// To whom the cooldown applies (see https://git.io/JtpsJ)
+			"cooldownScope": "CHANNEL"
+		}
+	},
+	// Custom Discord commands
+	"custom": [
+		{
+			// True if the execution should not provide any feedback
+			"quiet": false,
+			/* A Minecraft command to execute
+			   Use {n} for the nth argument, and {} for all
+			*/
+			"command": "/whitelist {}",
+			// True if the command should be available for use
+			"enabled": false,
+			// Trigger name for the command
+			"name": "whitelist",
+			// Any alternative trigger names for the command
+			"aliases": [
+				"wl"
+			],
+			// A brief description of what the command does
+			"help": "Manages the whitelist for the server",
+			// Details the correct usage of the command, e.g. <username> [count]
+			"usage": "<list/add/remove> [username]",
+			// True if the command should be hidden from help messages
+			"hidden": false,
+			// If defined, restricts access to Discord users with the given role identifier or name
+			"role": "Admin",
+			// The number of seconds a user must wait before using the command again
+			"cooldown": 0,
+			// To whom the cooldown applies (see https://git.io/JtpsJ)
+			"cooldownScope": "USER"
+		}
+	]
+}

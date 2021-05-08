@@ -1,0 +1,14 @@
+{ 
+	// Makes Chat History log the message key
+	"verboseMode": false,
+	// Maximum amount of remembered chat messages
+	"maxRememberedChatMessages": 25,
+	// The TranslatableText keys of the chat messages to remember
+	"keysToRemember": [ 
+		"death",
+		"multiplayer",
+		"chat.type.text",
+		"chat.type.advancement",
+		"chat.type.announcement"
+	]
+}

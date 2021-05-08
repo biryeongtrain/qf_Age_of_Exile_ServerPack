@@ -1,0 +1,150 @@
+[20:43:40] [main/INFO]: Loading for game Minecraft 1.16.5
+[20:43:40] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[20:43:46] [ForkJoinPool-1-worker-9/WARN]: The mod "autoconfig1u" contains invalid entries in its mod json:
+- Unsupported root entry "$schema" at line 2 column 14
+[20:43:46] [ForkJoinPool-1-worker-10/WARN]: The mod "libcd" contains invalid entries in its mod json:
+- Unsupported root entry "licence" at line 9 column 12
+[20:43:46] [ForkJoinPool-1-worker-4/WARN]: The mod "autoconfig1u" contains invalid entries in its mod json:
+- Unsupported root entry "$schema" at line 2 column 14
+[20:43:46] [ForkJoinPool-1-worker-9/WARN]: The mod "controlling" contains invalid entries in its mod json:
+- Unsupported root entry "side" at line 6 column 9
+[20:43:46] [ForkJoinPool-1-worker-11/WARN]: The mod "autoconfig1u" contains invalid entries in its mod json:
+- Unsupported root entry "$schema" at line 2 column 14
+[20:43:46] [main/WARN]: Warnings were found! 
+ - Mod 'Gunpowder' (gunpowder-base) conflicts with any version of mod 'Carpet Mod' (carpet), but a matching version is present: 1.4.33!
+	 - While this won't prevent you from starting the game, the developer(s) of 'Gunpowder' (gunpowder-base) have found that version 1.4.33 of 'Carpet Mod' (carpet) conflicts with their mod.
+	 - It is heavily recommended to remove one of the mods.
+	 - Mod 'Carpet Mod' (carpet) v1.4.33 is being loaded from the user's mod directory.
+ - Mod 'Taterzens' (taterzens) recommends version 1.5.0 or later of mod 'Fabric Tailor' (fabrictailor), but a non-matching version is present: 1.5.0-1.16.5!
+	 - You must install version 1.5.0 or later of 'Fabric Tailor' (fabrictailor).
+	 - Mod 'Fabric Tailor' (fabrictailor) v1.5.0-1.16.5 is being loaded from the user's mod directory.
+ - Mod 'AntiGhost' (antighost) recommends version 1.1.7 or later of mod modupdater, which is missing!
+	 - You must install version 1.1.7 or later of modupdater.
+[20:43:46] [main/INFO]: [FabricLoader] Loading 284 mods: fallflyinglib@1.1.0, gunpowder-base@0.5.4+1.16.5, roughlyenoughitems-api@5.11.218, serverping@1.0.0, aopalliance_aopalliance@1.0, kubejs@1605.3.7-build.186, dynres@1.1.1, fabricloader@0.11.3, org_jetbrains_kotlinx_kotlinx-serialization-json-jvm@1.1.0, crowdin-translate@1.2, com_fasterxml_jackson_core_jackson-annotations@2.12.3, transliterationlib@1.0.4, cloud_commandframework_cloud-core@1.5.0-SNAPSHOT, mcdar@1.0.0, fabric-dimensions-v1@2.0.6+9354966b7d, java@8, betternether@5.0.7, itemflexer@1.1.4, cotton-client-commands@1.0.1+1.16-rc1, com_google_inject_guice@4.2.3, fabric-game-rule-api-v1@1.0.6+ca58154a7d, bettercaves@1.16.5-1.1, fabric-api-base@0.2.1+9354966b7d, cloud_commandframework_cloud-minecraft-extras@1.5.0-SNAPSHOT, org_jetbrains_exposed_exposed-core@0.31.1, jumploader@2.1.3, yungsapi@1.16.5-Fabric-2, gunpowder-teleport@1.0.6+gunpowder.0.5.2.mc.1.16.5, randompatches@2.4.5-fabric, confabricate@2.0.3+4.0.0, cloud-v1@1.5.0-SNAPSHOT, terraform-dirt-api-v1@1.1.3, terraform-wood-api-v1@1.0.3, chat_heads@0.2.2+1.16.2, org_jetbrains_kotlin_kotlin-stdlib-jdk7@1.4.31, anvil_fix@1.2.1-1.16, org_codehaus_groovy_groovy@3.0.3, fabric-networking-v0@0.3.2+ca58154a7d, net_kyori_adventure-api@4.7.0, gshop@1.0.0+gunpowder.0.4.1.mc.1.16.5, flytre_lib@0.2.8, fabric-api-lookup-api-v1@1.0.0+dc716ea17d, minimotd-fabric@2.0.2, cleancut@mc1.16-2.1-fabric, repurposed_structures@1.16.5-1.10.4-fabric, deltalogger@1.1.3, taterzens@1.0.2, gvault@1.0.1+gunpowder.0.5.0.mc.1.16.5, modmenu@1.16.9, dataloader@2.1.0+mc1.16.1, sodium-extra@0.2.5, chatter-discord@1.1.1-beta, blur@2.1.0, microconfig@1.1.0, mysql_mysql-connector-java@8.0.19, org_jetbrains_kotlin_kotlin-stdlib-jdk8@1.4.31, roughlyenoughitems-runtime@5.11.218, voyager@1.0.0, fabric-crash-report-info-v1@0.1.3+ca58154a7d, spark@1.5.2, net_kyori_examination-string@1.1.0, curios@0.0.13-1.16.5, servertick@1.4, origins@0.7.0, nbtcrafting@2.0.11+mc1.16.4, fabric-key-binding-api-v1@1.0.4+9354966b7d, disable_custom_worlds_advice@1.2, com_typesafe_config@1.4.1, styledplayerlist@1.2.1, compactstatuseffects@1.3.0, antighost@1.16.5-fabric0.30.0-1.1.3, worldedit@7.2.5+57d5ac9, adorn@1.13.0+1.16.5, jline4mcdsrv@0.1.0, fabric-networking-api-v1@1.0.1+ca58154a7d, krypton@0.1.2, cleanview@1.16.5-v1-fabric, geckolib3@3.0.33, multipart_entities@1.1.1-SNAPSHOT, shutupconsole@1.1, terraform-shapes-api-v1@1.0.3, terrestria@2.2.0, placeholder-api@0.3.0, org_antlr_antlr4-runtime@4.7.2, fabric-structure-api-v1@1.1.4+ca58154a7d, mmorpg@1.8.0, org_aperlambda_lambdajcommon@1.8.1, maelstrom_library@1.2-1.16.5, lithium@0.6.4, fabric-object-builder-api-v1@1.9.4+9354966b7d, mcdw@3.1.1, fallingleaves@1.6.0+1.16.5, terraform-config-api-v1@1.0.3, org_postgresql_postgresql@42.2.2, fabric-rendering-data-attachment-v1@0.1.5+ca58154a7d, mcda@1.4.2, terraform-surfaces-api-v1@1.0.3, com_github_ben-manes_caffeine_caffeine@2.8.0, com_graphql-java_graphql-java@16.1, starlight@fabric-1.0.0-RC2-82ae5ca, javax_inject_javax_inject@1, reach-entity-attributes@1.0.1, com_fasterxml_jackson_core_jackson-databind@2.12.3, fabric-lifecycle-events-v1@1.2.1+ca58154a7d, sodium@0.1.1, com_fasterxml_jackson_dataformat_jackson-dataformat-yaml@2.12.3, cardinal-components-util@2.8.0, luckperms@5.3.9, fabric-loot-tables-v1@1.0.2+ca58154a7d, com_fasterxml_jackson_core_jackson-core@2.12.3, dynamicfps@2.0.1, carpet@1.4.33, autoconfigtoml@1.0.0-fabric, org_spongepowered_configurate-yaml@4.0.0, terraform-biome-builder-api-v1@1.0.4, org_jdbi_jdbi3-sqlite@3.12.2, minecraft@1.16.5, jankson@3.0.1+j1.2.0, fabric-command-api-v1@1.1.1+351679a77d, ftbquests@1605.2.1-build.39, net_kyori_adventure-platform-api@4.0.0-SNAPSHOT, net_kyori_adventure-text-serializer-plain@4.7.0, fabric-renderer-indigo@0.4.4+ca58154a7d, org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm@1.4.2, invview@1.4.1-1.16.4+, invsync@1.1.1, com_github_javadev_underscore@1.64, cardinal-components@2.8.0, libgui@3.3.2+1.16.4, notenoughanimations@1.2.3, slight-gui-modifications@1.7.1, fabric-entity-events-v1@1.0.3+ca58154a7d, xaerominimap@21.7.0, fabric-rendering-v0@1.1.2+ca58154a7d, com_graphql-java_java-dataloader@2.2.3, fabric-rendering-v1@1.6.0+2868a2287d, gunpowder-currency@1.0.2+gunpowder.0.3.7.mc.1.16.5, colonel@0.2, entityculling@1.2.1, autoconfig1u@3.3.1, cloud_commandframework_cloud-services@1.5.0-SNAPSHOT, library_of_exile@1.0.7, fabric-tag-extensions-v0@1.1.1+ca58154a7d, blue_endless_jankson@1.2.0, fastfurnace@2.4, libweb@1.0, fabric-events-lifecycle-v0@0.2.1+ca58154a7d, betterend@0.9.3-pre, org_apache_logging_log4j_log4j-slf4j-impl@2.8.1, tweed@3.0.0-beta.22, cloud_commandframework_cloud-brigadier@1.5.0-SNAPSHOT, org_jdbi_jdbi3-core@3.12.2, org_yaml_snakeyaml@1.29-SNAPSHOT, fabrictailor@1.5.0-1.16.5, fabric-keybindings-v0@0.2.1+ca58154a7d, dungeonsmod@1.16.5-1.0.0, org_spongepowered_configurate-hocon@4.0.0, dungeons_of_exile@1.1.1, artifice@0.14.6+1.16.5, satin@1.5.1, hydrogen@0.2, com_zaxxer_hikaricp@3.4.2, mesh_api@0.6.1-alpha.21+1.16.4, net_kyori_adventure-text-minimessage@4.1.0-SNAPSHOT, server_translations_api@1.4.0, bettersodiumvideosettingsbutton@1.0.3.1, sgod@0.0.2, controlling@1.1.2, diggusmaximus@1.4.2-1.16.3, lambdynlights@1.3.4+1.16, ftbguilibrary@1605.2.1.41, fiber@0.23.0-2, net_kyori_adventure-text-feature-pagination@4.0.0-SNAPSHOT, cardinal-components-level@2.8.0, org_jetbrains_kotlin_kotlin-stdlib@1.4.31, com_moandjiezana_toml_toml4j@0.7.2, fabric-blockrenderlayer-v1@1.1.5+ca58154a7d, kubejs_ui@1605.1.3-build.4, org_reactivestreams_reactive-streams@1.0.3, org_slf4j_slf4j-api@1.8.0-beta4, fabric@0.33.0+1.16, cardinal-components-scoreboard@2.8.0, net_kyori_examination-api@1.1.0, balance_of_exile@1.0.5, chatter-world@1.0.0, fabric-screen-handler-api-v1@1.1.5+9354966b7d, packet_tweaker@0.1.1, chathistory@1.0.2, customportalapi@0.0.1-beta25-1.16, mobz@2.4.6, chunky@1.2.54, editsign@2.2.0, fabric-tool-attribute-api-v1@1.2.6+ca58154a7d, terraform-tree-api-v1@1.0.4, angerable-patch@1.1.0-1.16.4, chatter-api@1.1.0, cloth-client-events-v0@1.5.47, enchant_giver@1.0.3, fabric-events-interaction-v0@0.4.2+ca58154a7d, wthit@2.7.1, org_spongepowered_configurate-gson@4.0.0, fabric-language-kotlin@1.5.0+kotlin.1.4.31, patchouli@1.16.4-50-FABRIC, overworld_two@1.0.4, mods-command@1.0.1, flan@1.16.2-1.2.6, cloth-config2@4.11.19, org_jetbrains_kotlinx_kotlinx-coroutines-jdk8@1.4.2, fabric-resource-loader-v0@0.4.6+2868a2287d, world_of_exile@1.2.0, org_jetbrains_kotlin_kotlin-reflect@1.4.31, cardinal-components-entity@2.8.0, setplayerdata@0.0.2+1.16.1, architectury@1.12.145, fabric-commands-v0@0.2.2+ca58154a7d, fabric-registry-sync-v0@0.7.4+ca58154a7d, authme@1.4.0, cardinal-components-base@2.8.0, fabric-mining-levels-v0@0.1.3+ca58154a7d, earthtojavamobs@1.7.0+1.16.4, fabric-models-v0@0.3.0+bc7a746f7d, gunpowder-market@1.0.3+gunpowder.0.4.0.mc.1.16.5, fabric-item-groups-v0@0.2.7+2868a2287d, shulkerboxtooltip@2.3.5+1.16.5, com_fasterxml_jackson_module_jackson-module-kotlin@2.12.3, fabric-renderer-api-v1@0.4.2+2868a2287d, wandering_collector@1.0.1+mc1.16.5, inventorysorter@1.7.9-1.16, rhino@1.7.13-build.23, cardinal-components-block@2.8.0, libcd@3.0.3+1.16.3, io_leangen_geantyref_geantyref@1.3.11, net_kyori_adventure-text-serializer-gson@4.7.0, cavebiomes@0.6.2, itemfilters@1605.2.4-build.30, disguiselib@1.0.1, fabric-console@1.0.3+1.16.3, fabric-containers-v0@0.1.11+9354966b7d, fabric-permissions-api-v0@0.1-SNAPSHOT, mm@2.1, org_jetbrains_kotlinx_kotlinx-serialization-core-jvm@1.1.0, campanion@1.3.5, fabric-textures-v0@1.0.6+ca58154a7d, cardinal-components-item@2.8.0, com_electronwill_night-config_core@3.6.3, worldeditcui@1.16.5+02, adventure-platform-fabric@4.0.0-SNAPSHOT, org_spongepowered_configurate-core@4.0.0, fabric-rendering-fluids-v1@0.1.13+ca58154a7d, bosses_of_mass_destruction@1.0.2-1.16.5, traverse@3.3.2, cardinal-components-chunk@2.8.0, fabric-renderer-registries-v1@2.3.0+2868a2287d, fabric-particles-v1@0.2.4+ca58154a7d, org_jetbrains_exposed_exposed-jdbc@0.31.1, roughlyenoughitems-default-plugin@5.11.218, fabric-networking-blockentity-v0@0.2.8+ca58154a7d, cloth-basic-math@0.5.1, chatter@1.1.1-beta, fatxporbs@0.0.9, fabric-screen-api-v1@1.0.0+c045166c7d, chatter-styling@1.1.0-beta, com_electronwill_night-config_toml@3.6.3, fiber2cloth@3.0.1, eer@1.0.0, dark-loading-screen@1.6.3, roughlyenoughitems@5.11.218, fabric-item-api-v1@1.2.1+ca58154a7d, kyrptconfig@1.1.6-1.16, biome_locator@1.1.2, org_spongepowered_configurate-extra-dfu4@4.0.0, terraform-overworld-biome-extensions-api-v1@1.0.3, spruceui@2.0.4+1.16, mesh@0.6.1-alpha.21+1.16.4, fabric-content-registries-v0@0.2.1+ca58154a7d, org_xerial_sqlite-jdbc@3.34.0, cardinal-components-world@2.8.0, vanilladeathchest@2.0.6-fabric, fabric-biome-api-v1@3.1.1+ca58154a7d, org_jetbrains_exposed_exposed-java-time@0.31.1, net_kyori_adventure-key@4.7.0, trade@1.1.3, org_codehaus_groovy_groovy-jsr223@3.0.3, fabric-object-builders-v0@0.7.2+ca58154a7d
+[20:43:46] [main/WARN]: Mod `cleancut` (mc1.16-2.1-fabric) does not respect SemVer - comparison support is limited.
+[20:43:46] [main/WARN]: Mod `starlight` (fabric-1.0.0-RC2-82ae5ca) does not respect SemVer - comparison support is limited.
+[20:43:46] [main/WARN]: Mod `ftbguilibrary` (1605.2.1.41) uses more dot-separated version components than SemVer allows; support for this is currently not guaranteed.
+[20:43:47] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/E:/gittest/qf_Age_of_Exile_ServerPack/fabric-server-launch.jar Service=Knot/Fabric Env=SERVER
+[20:43:47] [main/INFO]: Loaded configuration file for Lithium: 80 options available, 1 override(s) found
+[20:43:47] [main/WARN]: Reference map 'gshop-refmap.json' for mixins.gshop.json could not be read. If this is a development environment you can ignore this message
+[20:43:47] [main/WARN]: Reference map 'item-filters-fabric-refmap.json' for itemfilters.mixins.json could not be read. If this is a development environment you can ignore this message
+[20:43:48] [main/WARN]: Reference map 'itemflexer-refmap.json' for itemflexer.mixins.json could not be read. If this is a development environment you can ignore this message
+[20:43:48] [main/WARN]: Reference map 'libWeb-refmap.json' for libWeb.mixins.json could not be read. If this is a development environment you can ignore this message
+[20:43:48] [main/WARN]: Reference map 'Colonel-accessor-refmap.json' for colonel.accessor.mixins.json could not be read. If this is a development environment you can ignore this message
+[20:43:48] [main/WARN]: Error loading class: net/minecraft/class_337 (java.lang.ClassNotFoundException: net/minecraft/class_337)
+[20:43:48] [main/WARN]: @Mixin target net.minecraft.class_337 was not found bosses.mixins.json:BossBarHudMixin
+[20:43:48] [main/WARN]: Force-disabling mixin 'world.player_chunk_tick.ThreadedAnvilChunkStorageMixin' as rule 'mixin.world.player_chunk_tick' (added by mods [krypton]) disables it and children
+[20:43:48] [main/WARN]: Error loading class: net/minecraft/class_746 (java.lang.ClassNotFoundException: net/minecraft/class_746)
+[20:43:48] [main/WARN]: @Mixin target net.minecraft.class_746 was not found architectury.mixins.json:PlayerAttackInvoker
+[20:43:48] [main/WARN]: Error loading class: net/minecraft/class_745 (java.lang.ClassNotFoundException: net/minecraft/class_745)
+[20:43:48] [main/WARN]: @Mixin target net.minecraft.class_745 was not found architectury.mixins.json:PlayerAttackInvoker
+[20:43:48] [main/WARN]: @Mixin target net/minecraft/class_1708$class_1711 is public in nbtcrafting.mixins.json:brewing.MixinBrewingSlotPotion and should be specified in value
+[20:43:48] [main/WARN]: Error loading class: net/minecraft/class_465 (java.lang.ClassNotFoundException: net/minecraft/class_465)
+[20:43:48] [main/WARN]: @Mixin target net.minecraft.class_465 was not found curios.mixins.json:HandledScreenMixin
+[20:43:48] [main/WARN]: @Mixin target net/minecraft/class_3898$class_3208 is public in disguiselib.mixins.json:accessor.EntityTrackerEntryAccessor and should be specified in value
+[20:43:48] [main/WARN]: @Mixin target net/minecraft/class_3898$class_3208 is public in fabrictailor.mixins.json:EntityTrackerAccessor and should be specified in value
+[20:43:48] [main/WARN]: Error loading class: net/minecraft/class_4493 (java.lang.ClassNotFoundException: net/minecraft/class_4493)
+[20:43:48] [main/WARN]: @Mixin target net.minecraft.class_4493 was not found ftbguilibrary.mixins.json:GlStateManagerMixin
+[20:43:48] [main/WARN]: [carpet] detected, disabling UPDATE mixin com.sk89q.worldedit.fabric.mixin.MixinWorldChunkSetBlockHook
+[20:43:48] [main/WARN]: Error loading class: net/minecraft/class_970 (java.lang.ClassNotFoundException: net/minecraft/class_970)
+[20:43:48] [main/WARN]: @Mixin target net.minecraft.class_970 was not found mcda.mixins.json:ArmorFeatureRendererMixin
+[20:43:48] [main/WARN]: @Mixin target net/minecraft/class_3898$class_3208 is public in taterzens.common.mixins.json:accessors.EntityTrackerEntryAccessor and should be specified in value
+[20:43:48] [main/WARN]: @Mixin target me/shedaniel/rei/server/RecipeFinder is public in nbtcrafting.compat.mixins.json:MixinREIRecipeFinder and should be specified in value
+[20:43:48] [main/WARN]: @Mixin target net/minecraft/class_3898$class_3208 is public in fabric-networking-api-v1.mixins.json:accessor.EntityTrackerAccessor and should be specified in value
+[20:43:49] [main/WARN]: Error loading class: net/minecraft/class_2535$1 (java.lang.ClassNotFoundException: net/minecraft/class_2535$1)
+[20:43:49] [main/WARN]: @Mixin target net/minecraft/class_2535$1 was not found randompatches.mixins.json:timeouts.ChannelInitializerMixin
+[20:43:49] [main/WARN]: Trying to reflect-hack into the class-loader so we can define our own classes in an unrestricted loader...
+[20:43:49] [main/WARN]: ** The JVM might warn you with something nasty! **
+[20:43:49] [main/INFO]: Injecting class 'com.google.common.collect.HydrogenImmutableMapEntry' (url: jar:file:/E:/gittest/qf_Age_of_Exile_ServerPack/mods/hydrogen-fabric-mc1.16.5-0.2.jar!/com/google/common/collect/HydrogenImmutableMapEntry.class)
+[20:43:49] [main/INFO]: Injecting class 'com.google.common.collect.HydrogenImmutableReferenceHashMap' (url: jar:file:/E:/gittest/qf_Age_of_Exile_ServerPack/mods/hydrogen-fabric-mc1.16.5-0.2.jar!/com/google/common/collect/HydrogenImmutableReferenceHashMap.class)
+[20:43:49] [main/INFO]: Injecting class 'com.google.common.collect.HydrogenEntrySet' (url: jar:file:/E:/gittest/qf_Age_of_Exile_ServerPack/mods/hydrogen-fabric-mc1.16.5-0.2.jar!/com/google/common/collect/HydrogenEntrySet.class)
+[20:43:49] [main/INFO]: Injecting class 'com.google.common.collect.HydrogenEntrySetIterator' (url: jar:file:/E:/gittest/qf_Age_of_Exile_ServerPack/mods/hydrogen-fabric-mc1.16.5-0.2.jar!/com/google/common/collect/HydrogenEntrySetIterator.class)
+[20:43:49] [main/INFO]: [Mesh]: Send Reinforcements!
+[20:43:57] [main/INFO]: Looking for KubeJS plugins...
+[20:43:57] [main/INFO]: Found kubejs plugin
+[20:43:57] [main/INFO]: Done in 0 s
+[20:43:57] [main/INFO]: Loaded common.properties
+[20:43:59] [main/INFO]: Hello, World! (You will only see this line once in console, during startup)
+[20:43:59] [main/INFO]: Loaded script startup_scripts:script.js in 0.309 s
+[20:43:59] [main/INFO]: Loaded 1/1 KubeJS startup scripts in 1.898 s
+[20:44:03] [main/INFO]: [STDOUT]: Flex your items!
+[20:44:05] [main/INFO]: Origins 0.7.0 is initializing. Have fun!
+[20:44:05] [main/INFO]: WorldEdit for Fabric (version 7.2.5+57d5ac9) is loaded
+[20:44:07] [main/INFO]: Compression will use Java, encryption will use Java
+[20:44:07] [main/INFO]: Messages containing the following phrases will be filtered out
+[20:44:07] [main/INFO]: class_2983
+[20:44:07] [main/INFO]: class_2316
+[20:44:07] [main/INFO]: class_3225
+[20:44:07] [main/INFO]: class_3231
+[20:44:09] [main/ERROR]: Failed to load config 'class com.robertx22.age_of_exile.config.forge.ModConfig', using default!
+me.sargunvohra.mcmods.autoconfig1u.serializer.ConfigSerializer$SerializationException: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 164 column 6 path $.autoCompatibleItems.ENABLE_AUTOMATIC_COMPATIBLE_ITEMS
+	at me.sargunvohra.mcmods.autoconfig1u.serializer.GsonConfigSerializer.deserialize(GsonConfigSerializer.java:65) ~[autoconfig1u-3.3.1.jar:?]
+	at me.sargunvohra.mcmods.autoconfig1u.ConfigManager.load(ConfigManager.java:87) ~[autoconfig1u-3.3.1.jar:?]
+	at me.sargunvohra.mcmods.autoconfig1u.ConfigManager.<init>(ConfigManager.java:53) ~[autoconfig1u-3.3.1.jar:?]
+	at me.sargunvohra.mcmods.autoconfig1u.AutoConfig.register(AutoConfig.java:45) ~[autoconfig1u-3.3.1.jar:?]
+	at com.robertx22.age_of_exile.mmorpg.init.CommonInit.onInitialize(CommonInit.java:67) ~[Age-Of-Exile-1.16.5-1.8.0%20(8).jar:?]
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke0(EntrypointUtils.java:50) [fabric-server-launch.jar:?]
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke(EntrypointUtils.java:36) [fabric-server-launch.jar:?]
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointServer.start(EntrypointServer.java:32) [fabric-server-launch.jar:?]
+	at net.minecraft.server.Main.main(Main.java:92) [intermediary-server.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_261]
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:226) [fabric-server-launch.jar:?]
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:146) [fabric-server-launch.jar:?]
+	at net.fabricmc.loader.launch.knot.KnotServer.main(KnotServer.java:28) [fabric-server-launch.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_261]
+	at net.fabricmc.loader.launch.server.FabricServerLauncher.launch(FabricServerLauncher.java:62) [fabric-server-launch.jar:?]
+	at net.fabricmc.loader.launch.server.FabricServerLauncher.setup(FabricServerLauncher.java:106) [fabric-server-launch.jar:?]
+	at net.fabricmc.loader.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:50) [fabric-server-launch.jar:?]
+Caused by: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 164 column 6 path $.autoCompatibleItems.ENABLE_AUTOMATIC_COMPATIBLE_ITEMS
+	at com.google.gson.Gson.fromJson(Gson.java:902) ~[server.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:825) ~[server.jar:?]
+	at me.sargunvohra.mcmods.autoconfig1u.serializer.GsonConfigSerializer.deserialize(GsonConfigSerializer.java:61) ~[autoconfig1u-3.3.1.jar:?]
+	... 22 more
+Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at line 164 column 6 path $.autoCompatibleItems.ENABLE_AUTOMATIC_COMPATIBLE_ITEMS
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1559) ~[server.jar:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:491) ~[server.jar:?]
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:414) ~[server.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:214) ~[server.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:129) ~[server.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:220) ~[server.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[server.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:825) ~[server.jar:?]
+	at me.sargunvohra.mcmods.autoconfig1u.serializer.GsonConfigSerializer.deserialize(GsonConfigSerializer.java:61) ~[autoconfig1u-3.3.1.jar:?]
+	... 22 more
+[20:44:09] [main/INFO]: [invsync] Initializing
+[20:44:11] [main/INFO]: [Enchant Giver] has been initiated.
+[20:44:11] [main/INFO]: Discovered plugin waila:vanilla at mcp.mobius.waila.plugin.vanilla.WailaVanilla
+[20:44:11] [main/INFO]: Discovered plugin waila:core at mcp.mobius.waila.plugin.core.WailaCore
+[20:44:11] [main/INFO]: Registering plugin at mcp.mobius.waila.plugin.core.WailaCore
+[20:44:11] [main/INFO]: Registering plugin at mcp.mobius.waila.plugin.vanilla.WailaVanilla
+[20:44:11] [main/INFO]: Mods Command detected 249 loaded mods.
+[20:44:13] [main/INFO]: [Earth2Java] Mod loaded! Enjoy :D
+[20:44:13] [main/INFO]: [Wandering Collector] Initializing
+[20:44:13] [main/INFO]: [cave biomes] Your caves are cavier!
+[20:44:13] [main/INFO]: Definitely not up to no good
+[20:44:13] [main/INFO]: Starting Gunpowder
+[20:44:14] [main/INFO]: Loading modules
+[20:44:14] [main/INFO]: Loaded module teleport, provided by gunpowder-teleport
+[20:44:14] [main/INFO]: Loaded module gshop, provided by gshop
+[20:44:14] [main/INFO]: Loaded module gvault, provided by gvault
+[20:44:14] [main/INFO]: Loaded module currency, provided by gunpowder-currency
+[20:44:14] [main/INFO]: Loaded module market, provided by gunpowder-market
+[20:44:14] [main/INFO]: Optional configuration for DeltaLogger created in `config` directory. Using SQLite by default.
+[20:44:14] [main/INFO]: Krypton is now accelerating your Minecraft server's networking stack ?
+[20:44:14] [main/INFO]: Loading Xaero's Minimap - Stage 1/2 (Server)
+[20:44:14] [main/INFO]: Reloaded configs for wandering_collector (server/highest)
+[20:44:14] [main/INFO]: Registered Chatter add-on 'Chatter World' - Add various chat mechanics to the world
+[20:44:14] [main/INFO]: Registered game rule: showNamedEntityDeathMessages
+[20:44:14] [main/INFO]: Hello ChatHistory world!
+[20:44:14] [main/INFO]: Registered Chatter add-on 'Chatter Styling' - Change how players see each other's messages
+[20:44:14] [main/INFO]: Integrating with LuckPerms for chat styling
+[20:44:15] [main/ERROR]: Failed to load properties from file: server.properties
+[20:44:15] [main/INFO]: Pack link: http://127.0.0.1:57145/resources.zip
+[20:44:15] [main/WARN]: Failed to load eula.txt
+[20:44:15] [main/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.

@@ -1,0 +1,16 @@
+{
+	"player_list": {
+		"enabled": false,
+		"value": [
+			"Fake Player",
+			"Some other dude"
+		]
+	},
+	"player_count": {
+		"enabled": false,
+		"value": {
+			"count": 1,
+			"max": 12
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	/* Template URL for retrieving Minecraft avatars, i.e. for use in embeds
+	   Use ${username} for the player's name, and ${size} for the height in pixels
+	*/
+	"avatarUrl": "https://minotar.net/helm/${username}/${size}",
+	// True if emojis should be treated as unicode - useful if your players' client supports emojis
+	"useUnicodeEmojis": false,
+	// Bot presences relayed periodically
+	"presence": {
+		// The number of seconds between presence updates (must be >=15)
+		"interval": 60,
+		// True if the presences should be randomly selected
+		"random": false,
+		// Presences
+		"entries": [
+			{
+				// The type of presence (see https://git.io/Jqkez)
+				"type": "DEFAULT",
+				/* The text value that is put on display
+				   Use ${version}, ${ip}, ${port}, ${motd}, ${difficulty}, ${max_players}, ${player_count}, ${tps}, ${tps_time}, ${uptime} and ${datetime[:format]}
+				*/
+				"value": "Minecraft",
+				// If defined, sets the URL of the underlying media, e.g. Twitch stream
+				"url": null
+			}
+		]
+	}
+}
