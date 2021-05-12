@@ -1,5 +1,17 @@
 {
   "version": 1,
   "language": "en",
-  "continueOnRestart": false
+  "continueOnRestart": false,
+  "tasks": {
+    "mining_dims:hunting_dim": {
+      "cancelled": true,
+      "radius": 1000,
+      "centerX": -262,
+      "centerZ": 102,
+      "iterator": "concentric",
+      "shape": "square",
+      "count": 16080,
+      "time": 420426
+    }
+  }
 }
