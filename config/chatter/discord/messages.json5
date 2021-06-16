@@ -3,7 +3,7 @@
 	"entries": [
 		{
 			// Identifier for a channel within Discord to observe
-			"id": 0,
+			"id": 851997548830916638,
 			// If non-empty, reduces the scope of all events to the listed Minecraft dimension IDs (e.g. 'minecraft:the_nether')
 			"dimensions": [],
 			// Minecraft events relayed to Discord
@@ -57,7 +57,7 @@
 				*/
 				"crashed": "Server crash detected! :warning:\n_${reason}_",
 				// True if a crash report is attached to the server crashed message
-				"uploadCrashReport": false
+				"uploadCrashReport": true
 			},
 			// Discord events relayed to Minecraft
 			"minecraft": {

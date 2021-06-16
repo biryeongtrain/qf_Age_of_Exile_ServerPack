@@ -19,7 +19,7 @@
 				/* The text value that is put on display
 				   Use ${version}, ${ip}, ${port}, ${motd}, ${difficulty}, ${max_players}, ${player_count}, ${tps}, ${tps_time}, ${uptime} and ${datetime[:format]}
 				*/
-				"value": "Minecraft",
+				"value": "모드팩 서버 ${version}, 222.234.190.69 , ${player_count} / ${max_players}, ${tps}, ${uptime}",
 				// If defined, sets the URL of the underlying media, e.g. Twitch stream
 				"url": null
 			}

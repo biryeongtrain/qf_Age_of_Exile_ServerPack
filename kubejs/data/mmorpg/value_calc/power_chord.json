@@ -1,0 +1,13 @@
+{
+  "stat_scalings": [
+	{
+      "stat": "mana",
+      "multi": 0.1
+    }
+	],
+  "id": "power_chord",
+  "base_scaling_type": "NORMAL",
+  "atk_scaling_type": "DOUBLE_AT_MAX_LVL",
+  "attack_scaling": 3.0,
+  "base_val": 8.0
+}

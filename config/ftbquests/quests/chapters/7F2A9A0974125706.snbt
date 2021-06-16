@@ -1,7 +1,7 @@
 {
 	id: "7F2A9A0974125706",
 	group: "",
-	order_index: 0,
+	order_index: 2,
 	filename: "7F2A9A0974125706",
 	title: "기본기 마련",
 	icon: "minecraft:grass_block",
@@ -22,6 +22,7 @@
 				"",
 				"아, 꼭 &a리소스팩&r 에 가셔서 &bqf_lang_file&r을 활성화 해주세요."
 			],
+			size: 1.5d,
 			id: "14036680FCD32393",
 			tasks: [{
 				id: "4C958E0B6ECFDE8C",
@@ -62,6 +63,21 @@
 					auto: "enabled",
 					command: "/money @p add 200",
 					player_command: false
+				},
+				{
+					id: "5215015E8104F92B",
+					type: "item",
+					item: "waystones:pocket_wormhole"
+				},
+				{
+					id: "508E017464C3704C",
+					type: "item",
+					item: "waystones:waystone"
+				},
+				{
+					id: "71055ABAA0911C98",
+					type: "item",
+					item: "minecraft:torch"
 				}
 			]
 		},
@@ -103,40 +119,72 @@
 				{
 					id: "026767BA1812B441",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:diamond"
 				},
 				{
 					id: "76FDB8244976A077",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:iron_ingot",
 					count: 2
 				},
 				{
 					id: "5B824C3233272E70",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:gold_ingot"
 				},
 				{
 					id: "40DACEC98EC0EDEE",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:furnace",
 					count: 4
 				},
 				{
 					id: "1B093325A1E092EE",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:crafting_table",
 					count: 2
 				},
 				{
 					id: "4FB04B5F08C31DE1",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:coal"
 				},
 				{
 					id: "7CCD460049FC9976",
 					type: "item",
+					auto: "enabled",
 					item: "minecraft:gunpowder"
+				},
+				{
+					id: "78916B98B170B302",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:redstone"
+				},
+				{
+					id: "4D63F26976FCA835",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:grindstone"
+				},
+				{
+					id: "478015F8BB74322E",
+					type: "item",
+					icon: "minecraft:diamond",
+					auto: "enabled",
+					item: "minecraft:diamond"
+				},
+				{
+					id: "4F3D1992846AB8C8",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:chest"
 				}
 			]
 		},
@@ -217,38 +265,6 @@
 					item: "origins:orb_of_origin"
 				}
 			]
-		},
-		{
-			title: "맞춤형 레벨링",
-			x: 5.5d,
-			y: 0.0d,
-			subtitle: "뉴비들을 위한 초반 던전",
-			description: [
-				"정말 슬프게도 오버월드 스폰은 대부분 선발 주자들에게 점령 당했습니다.",
-				"",
-				"하지만 우리는 오버월드 근처에 있는 던전들이 필요하죠.",
-				"",
-				"그 때 우리는 Hell 1 디멘션을 가면 됩니다.",
-				"",
-				"우선, Hell 1 디멘션에 들어가 보세요. Hell 1 디멘션은 네더의 모습을 하고 있습니다.",
-				"",
-				"Hell 1 디멘션에 가려면 조약돌을 네더 포탈처럼 둔 다음, 부싯돌과 부시를 사용해 보세요."
-			],
-			dependencies: ["57740EBCAAD390FC"],
-			id: "662A27A57BE9E6C0",
-			tasks: [{
-				id: "4536774B1861A9CE",
-				type: "dimension",
-				title: "Hell 1 차원 입장하기",
-				icon: {
-					id: "mmorpg:uniques/armor/jester_hat",
-					Count: 1b,
-					tag: {
-						Damage: 0
-					}
-				},
-				dimension: "world_of_exile:hell1"
-			}]
 		},
 		{
 			title: "필요한 장비들",
@@ -357,12 +373,28 @@
 				{
 					id: "64F5376E6E9CAEB9",
 					type: "command",
-					title: "200원을 지급합니다.",
+					title: "200 경험치를 획득합니다.",
 					icon: "mcda:upgrade_core_golden",
 					team_reward: false,
 					auto: "enabled",
-					command: "/money @p add 200",
+					command: "/age_of_exile give exp @p 200",
 					player_command: false
+				},
+				{
+					id: "3918F9436F193C53",
+					type: "item",
+					item: "mmorpg:teleporter"
+				},
+				{
+					id: "68119090C9F8B5C9",
+					type: "item",
+					item: "mmorpg:dim_shard/0",
+					count: 9
+				},
+				{
+					id: "7C67A94685DF6C5B",
+					type: "item",
+					item: "mmorpg:dungeon_key/0"
 				}
 			]
 		},
@@ -374,11 +406,142 @@
 			description: [""],
 			dependencies: ["42D7C93B29C3A91C"],
 			id: "59616E2ACF37D864",
+			tasks: [
+				{
+					id: "7E22C542D29F4275",
+					type: "item",
+					item: "mmorpg:cooking_station"
+				},
+				{
+					id: "05DF398C95600FB7",
+					type: "item",
+					item: "mmorpg:smithing_station"
+				},
+				{
+					id: "0ADFDAA47D2AB579",
+					type: "item",
+					item: "mmorpg:tablet_station"
+				}
+			]
+		},
+		{
+			title: "던전으로 진입하기",
+			icon: {
+				id: "kubejs:eldritch_sword",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 4.0d,
+			y: 0.0d,
+			subtitle: "나만의 맞춤형 던전",
+			description: [
+				"싱글 플레이에서는 문제가 없겠지만, 멀티 플레이에서는 이미 선두자들이 당신이 얻어야 할 전리품들을 가져가는 경우가 허다합니다.",
+				"",
+				"이런 아무것도 얻지 못하고 RPG를 즐겨야 하는 비극적인 상황을 어떻게 해결해야할까요?",
+				"",
+				"정답은 Teleporter 를 사용하는 것 입니다. Teleporter는 당신이 사용한 Dungeon Key의 레벨 제한과 당신의 현재 레벨에 따라 여러분들이 탐험 할 수 있는 던전으로 포탈을 열어줍니다.",
+				"",
+				"던전은 여러분들, 또는 여러분들과 팀을 맺은 팀원들만 갈 수 있으며, 모든 던전은 개별적으로 존재하기 때문에 다른 유저를 만날 수 없습니다.",
+				"",
+				'만약 팀을 맺고 싶다면, "&a/age of exile teams create&r" 을 한 후, 대상에게 "&a/age_of_exile teams invite [유저명]&r"을 입력하세요.',
+				"",
+				"열쇠를 들고 Teleporter 에 우클릭 하면 던전의 난이도를 설정 할 수 있습니다. 10레벨 전까진, 0 티어로 플레이 하시는 것을 추천드립니다.",
+				"",
+				"Start 버튼을 누르면, 조약돌 배경의 GUI 가 생성됩니다. 화로 아이콘을 누르면 해당 던전에서 드랍되는 유니크 아이템, 솔로 플레이, 듀오 플레이, 팀 플레이로 3개의 난이도가 있으며 팀 플레이 시 몹들의 스텟이 증가합니다."
+			],
+			dependencies: ["42D7C93B29C3A91C"],
+			id: "67201061DB26D849",
 			tasks: [{
-				id: "7E22C542D29F4275",
+				id: "77254BFD1B35CAA3",
+				type: "dimension",
+				title: "던전 디멘션에 입장하세요.",
+				dimension: "mmorpg:dungeon"
+			}],
+			rewards: [
+				{
+					id: "0814446CC91124DB",
+					type: "command",
+					title: "무작위 장비 하나를 획득합니다. ( 레벨은 1로 고정이며, 장비 종류, 희귀도는 무작위입니다. )",
+					icon: {
+						id: "mmorpg:weapon/axe/axe4",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					},
+					auto: "enabled",
+					command: "/age_of_exile give gear @p random 1 random 1",
+					player_command: false
+				},
+				{
+					id: "5FFC782001821837",
+					type: "item",
+					item: {
+						id: "mmorpg:backpack/normal",
+						Count: 1b,
+						tag: { }
+					}
+				},
+				{
+					id: "63A8630DA15812AF",
+					type: "item",
+					item: "mmorpg:backpack/upgrade/size0"
+				}
+			]
+		},
+		{
+			title: "가방 사용하기",
+			x: 6.0d,
+			y: 0.0d,
+			subtitle: "나만의 맞춤형 가방",
+			description: [
+				"Age of Exile 모드는 방대한 양의 아이템들을 드랍하지만, 그것을 담아둘 공간은 너무 부족합니다.",
+				"",
+				"그래서 Age of Exile 모드에서는 가방을 지원합니다.",
+				"",
+				"이 가방은 처음에는 9칸밖에 없지만, 이후 업그레이드를 통해 가방에 기능을 추가할 수 있습니다.",
+				"",
+				"이전 퀘스트에서 제공받은 가방과 킷을 가지고 장비 개조대에 가서 가방과 킷을 넣고 가방을 업그레이드 해보세요."
+			],
+			dependencies: ["67201061DB26D849"],
+			hide: true,
+			id: "14E02E1188375080",
+			tasks: [{
+				id: "51C7A3F3D40B6529",
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: "06C7CD8E04826B68",
 				type: "item",
-				item: "mmorpg:cooking_station"
+				item: "mmorpg:backpack/upgrade/auto_sal0"
 			}]
+		},
+		{
+			title: "죽은 토템 살리기",
+			x: -1.0d,
+			y: 2.0d,
+			subtitle: "토템은 이제 일회용이 아닙니다. 모루에서 죽은 토템에 금블럭을 입히면 살아납니다.",
+			dependencies: ["14036680FCD32393"],
+			id: "1968A64C30E48DF3",
+			tasks: [{
+				id: "212C6BE551898EF3",
+				type: "item",
+				item: "deadtotems:dead_totem"
+			}],
+			rewards: [
+				{
+					id: "75A8FD901022F59E",
+					type: "item",
+					item: "minecraft:gold_block"
+				},
+				{
+					id: "60583CF0DBCA93D6",
+					type: "xp_levels",
+					xp_levels: 10
+				}
+			]
 		}
 	]
 }

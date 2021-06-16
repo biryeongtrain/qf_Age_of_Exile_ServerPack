@@ -23,8 +23,8 @@
 	}
   ],
   "level_range": {
-    "start": 0.15,
-    "end": 0.4
+    "start": 0.1,
+    "end": 1.0
   },
   "tag_list": {
     "tags": [
@@ -33,13 +33,14 @@
       "ranger_casting_weapon",
       "ranged_weapon",
       "weapon_family",
-      "bow"
+      "bow",
+	  "tier2"
     ]
   },
   "stat_req": {
     "base_req": {},
     "scaling_req": {
-      "dexterity": 0.4,
+      "dexterity": 0.6,
 	  "wisdom": 0.1
     }
   },
@@ -47,6 +48,6 @@
   "gear_slot": "bow",
   "rar_group": "non_unique",
   "weapon_type": "Bow",
-  "attack_style": "RANGED",
+  "attack_style": "ranged",
   "atk_speed": 1.0
 }

@@ -1,6 +1,7 @@
 { 
 	"ENABLE_MOD": true,
 	"ENABLE_DUNGEON": true,
+	"AUTO_DESTROY_TOWERS": true,
 	"DUNGEON": { 
 		"PER_DIM": { 
 			"blackOrWhiteList": "WHITELIST",
@@ -149,6 +150,7 @@
 		"minecraft:husk"
 	],
 	"ALLOWED_BOSSES": [ 
-		"world_of_exile:snow_golem"
+		"world_of_exile:snow_golem",
+		"world_of_exile:obsidian_golem"
 	]
 }

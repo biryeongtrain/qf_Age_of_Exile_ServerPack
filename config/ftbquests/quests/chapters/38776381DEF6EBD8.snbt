@@ -1,0 +1,998 @@
+{
+	id: "38776381DEF6EBD8",
+	group: "",
+	order_index: 4,
+	filename: "38776381DEF6EBD8",
+	title: "교환 상점",
+	icon: "adorn:trading_station",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -8.0d,
+			y: -0.5d,
+			id: "58E2BA30DCC9C297",
+			tasks: [{
+				id: "41AFEAAF7DDF07C7",
+				type: "item",
+				item: "minecraft:rotten_flesh",
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "17FF85F2C584B63E",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:rotten_flesh"
+				},
+				{
+					id: "2BC0C8CA478AC80E",
+					type: "command",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 58E2BA30DCC9C297",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "좀비 사냥",
+			icon: "minecraft:zombie_head",
+			x: -3.0d,
+			y: -2.0d,
+			subtitle: "본업을 부업마냥",
+			description: [
+				"Age of Exile 에서의 삶은 그리 쉽지는 않습니다.",
+				"",
+				"몸은 하나지만, 레벨도 올려야하고 스펙업을 할 아이템도 구해야 하죠.",
+				"",
+				"하지만 반복 퀘스트를 한다면 말은 달라집니다. ",
+				"",
+				'좀비를 80마리 잡고 "&bDC 코인 - 몹 처치&r"를 획득하세요.',
+				"",
+				"&bDC 코인 - 몹 처치&r로 여러분들에게 필요한 자원들을 구매 할 수 있습니다."
+			],
+			id: "222951F22BA70451",
+			tasks: [{
+				id: "5B62A12A7C6EA9D8",
+				type: "kill",
+				title: "좀비 사냥",
+				icon: "minecraft:zombie_head",
+				entity: "minecraft:zombie",
+				value: 80L
+			}],
+			rewards: [
+				{
+					id: "07B8FA28F86F2901",
+					type: "item",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['[{"text":"몹 처치 보상으로 받은 코인입니다.","italic":false}]'],
+								Name: '[{"text":"DC 코인 - 몹 처치","italic":false}]'
+							}
+						}
+					}
+				},
+				{
+					id: "31DD47EE63F95B3B",
+					type: "command",
+					title: "반복 퀘스트를 위한 커맨드입니다. 잡아먹지 않아요.",
+					icon: "minecraft:command_block",
+					command: "/ftbquests change_progress @p reset 222951F22BA70451",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "스켈레톤 사냥",
+			x: 0.0d,
+			y: -2.0d,
+			subtitle: "본업을 부업마냥",
+			id: "727DF14003721A9A",
+			tasks: [{
+				id: "713ADC26F1C34F23",
+				type: "kill",
+				icon: "minecraft:skeleton_skull",
+				entity: "minecraft:skeleton",
+				value: 80L
+			}],
+			rewards: [
+				{
+					id: "7CDCDC9D772E8FA0",
+					type: "item",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['[{"text":"몹 처치 보상으로 받은 코인입니다.","italic":false}]'],
+								Name: '[{"text":"DC 코인 - 몹 처치","italic":false}]'
+							}
+						}
+					}
+				},
+				{
+					id: "5308CAB7F4449EA5",
+					type: "command",
+					title: "반복 퀘스트를 위한 커맨드입니다. 잡아먹지 않아요.",
+					command: "/ftbquests change_progress @p reset 727DF14003721A9A",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "태생의 구슬 가격 나중에 올릴 예정임",
+			icon: "origins:orb_of_origin",
+			disable_toast: true,
+			x: -4.5d,
+			y: 0.5d,
+			id: "16E5D1C6712ADEC3",
+			tasks: [{
+				id: "17BBDCCB20358143",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "29DAF3E7757E1768",
+					type: "item",
+					auto: "enabled",
+					item: "origins:orb_of_origin"
+				},
+				{
+					id: "159E4805BE9BDAAF",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 16E5D1C6712ADEC3",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "다이아몬드",
+			icon: "minecraft:diamond",
+			disable_toast: true,
+			x: -3.0d,
+			y: 0.5d,
+			id: "66D5F81E425BFAD2",
+			tasks: [{
+				id: "0097CAF950989E68",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "5A77244C5A078EA2",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:diamond"
+				},
+				{
+					id: "5EB1CBF87F118919",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 66D5F81E425BFAD2",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "금괴",
+			icon: { id: "minecraft:gold_ingot", Count: 4b },
+			disable_toast: true,
+			x: -1.5d,
+			y: 0.5d,
+			id: "031566B21F48C6DA",
+			tasks: [{
+				id: "7F2575E91B566A29",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				count: 2L,
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "5AE41145481324D2",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:gold_ingot",
+					count: 9
+				},
+				{
+					id: "228D7A89E529A70E",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "no_toast",
+					command: "/ftbquests change_progress @p reset 031566B21F48C6DA",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "철괴",
+			icon: { id: "minecraft:iron_ingot", Count: 16b },
+			disable_toast: true,
+			x: 0.0d,
+			y: 0.5d,
+			id: "511D7FA095968EB8",
+			tasks: [{
+				id: "78D6B8E5415DB61F",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "5150B09B51409949",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:iron_ingot",
+					count: 9
+				},
+				{
+					id: "5F3688D6100F8B56",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 511D7FA095968EB8",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "상자깡",
+			icon: "mmorpg:loot_crate/common",
+			disable_toast: true,
+			x: -4.5d,
+			y: 2.0d,
+			id: "1235E355D1728634",
+			tasks: [{
+				id: "384E2DC01E9F5398",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "5245E7A5FDD89377",
+					type: "item",
+					auto: "enabled",
+					item: "mmorpg:loot_crate/common",
+					count: 2
+				},
+				{
+					id: "0478B6353CB89350",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 1235E355D1728634",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "특성 5개 리셋",
+			icon: "mmorpg:potions/add_reset_perk_points",
+			disable_toast: true,
+			x: 1.5d,
+			y: 2.0d,
+			id: "57898CF09379FD4F",
+			tasks: [{
+				id: "6E83D3722F81D90D",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "4BA7DCFEF7C13DC6",
+					type: "item",
+					auto: "enabled",
+					item: "mmorpg:potions/add_reset_perk_points"
+				},
+				{
+					id: "020EA3D2F9F311CB",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 57898CF09379FD4F",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "불사의 토템",
+			icon: "minecraft:totem_of_undying",
+			disable_toast: true,
+			x: 3.0d,
+			y: 2.0d,
+			subtitle: "토템이 사용되면 죽은 토템이 됩니다. 죽은 토템은 금블록과 경험치를 사용해 다시 살릴 수 있습니다.",
+			id: "03D6FD73BA510ACF",
+			tasks: [{
+				id: "56899D8CEA5C6F66",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "0D26F197E53FB0B3",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:totem_of_undying"
+				},
+				{
+					id: "53A7FE5E9231921C",
+					type: "command",
+					title: "Auto Command for reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 03D6FD73BA510ACF",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "썩은 살점",
+			icon: { id: "minecraft:rotten_flesh", Count: 64b },
+			disable_toast: true,
+			x: -3.0d,
+			y: -3.5d,
+			id: "1ADFB7A4B0360B35",
+			tasks: [{
+				id: "6E1474AA43F00C9C",
+				type: "item",
+				item: "minecraft:rotten_flesh",
+				count: 64L,
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "63B2E6F81E2BE2ED",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "1986B384A356B11D",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 1ADFB7A4B0360B35",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "뼈다귀",
+			icon: { id: "minecraft:bone", Count: 64b },
+			disable_toast: true,
+			x: -1.5d,
+			y: -3.5d,
+			id: "56FF3446465A687C",
+			tasks: [{
+				id: "5B59EB1F713615BF",
+				type: "item",
+				item: "minecraft:bone",
+				count: 64L,
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "4DCBA71D2EBF201D",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "4005B65C89D61BE0",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 56FF3446465A687C",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "가죽",
+			icon: { id: "minecraft:leather", Count: 8b },
+			disable_toast: true,
+			x: 1.5d,
+			y: 0.5d,
+			id: "4204D5A84EE14041",
+			tasks: [{
+				id: "2D686BAF04C1DAB9",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "5AD5CE7B8C1F6F83",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:leather",
+					count: 8
+				},
+				{
+					id: "54D9B7736D4E0933",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 4204D5A84EE14041",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "실",
+			icon: { id: "minecraft:string", Count: 16b },
+			x: 3.0d,
+			y: 0.5d,
+			id: "7112B41114A2C05C",
+			tasks: [{
+				id: "2782F0D9A4FF662C",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "0DBA7CCAAA07BDAA",
+					type: "item",
+					auto: "enabled",
+					item: "minecraft:string",
+					count: 16
+				},
+				{
+					id: "52A1836581B918BF",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 7112B41114A2C05C",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "상자깡2",
+			icon: { id: "mmorpg:loot_crate/magic", Count: 2b },
+			disable_toast: true,
+			x: -3.0d,
+			y: 2.0d,
+			id: "0701B35F6EC21BAD",
+			tasks: [{
+				id: "07E8ED55ABF5E13B",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "1E3FFDA75CB3722C",
+					type: "item",
+					auto: "enabled",
+					item: "mmorpg:loot_crate/magic"
+				},
+				{
+					id: "3ADECFE87F2550E3",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 0701B35F6EC21BAD",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "상자깡3",
+			icon: "mmorpg:loot_crate/rare",
+			disable_toast: true,
+			x: -1.5d,
+			y: 2.0d,
+			id: "2CAC53D8B6B8A87A",
+			tasks: [{
+				id: "5466D6C7157EC454",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				count: 2L,
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "2510CDFFEA0D1019",
+					type: "item",
+					auto: "enabled",
+					item: "mmorpg:loot_crate/rare"
+				},
+				{
+					id: "2DF8C76D92997CE4",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 2CAC53D8B6B8A87A",
+					player_command: false
+				}
+			]
+		},
+		{
+			title: "상자깡4 - 보석",
+			icon: "mmorpg:loot_crate/gem",
+			x: 0.0d,
+			y: 2.0d,
+			id: "5F38DF7D5C97FB9E",
+			tasks: [{
+				id: "1C5FC8D04E53A626",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "402CD0F337223B46",
+					type: "item",
+					auto: "enabled",
+					item: "mmorpg:loot_crate/gem"
+				},
+				{
+					id: "63FE945306FABEAD",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 5F38DF7D5C97FB9E",
+					player_command: false
+				}
+			]
+		},
+		{
+			icon: "minecraft:creeper_head",
+			x: 4.5d,
+			y: -2.0d,
+			id: "4EE839A84147DDC2",
+			tasks: [{
+				id: "448241DA28C1D20A",
+				type: "kill",
+				title: "크리퍼 사냥",
+				entity: "minecraft:creeper",
+				value: 40L
+			}],
+			rewards: [
+				{
+					id: "36F7DF889E04C108",
+					type: "item",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "23E53E79BA8884A6",
+					type: "command",
+					title: "Auto Command for Reset",
+					command: "/ftbquests change_progress @p reset 4EE839A84147DDC2",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: -4.5d,
+			y: -3.5d,
+			id: "0D6F72BE59FE100B",
+			tasks: [{
+				id: "2809250FD6A01296",
+				type: "item",
+				item: {
+					id: "kubejs:dc_coin",
+					Count: 1b,
+					tag: {
+						display: {
+							Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+							Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+						}
+					}
+				},
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "51F43BBC89D33078",
+					type: "item",
+					item: "kubejs:dc_coin"
+				},
+				{
+					id: "1F6C23640FAD86FC",
+					type: "command",
+					title: "Auto Command for Reset",
+					command: "/ftbquests change_progress @p reset 0D6F72BE59FE100B",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: -4.5d,
+			y: -2.0d,
+			id: "5D83FC053827A15F",
+			tasks: [{
+				id: "0E60D2B90DE7C15E",
+				type: "item",
+				item: "kubejs:dc_coin",
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "51B2E04F6E861321",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "7ED0ADFFFDBC799A",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 5D83FC053827A15F",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: -1.5d,
+			y: -2.0d,
+			id: "2B5E55D1821AAD08",
+			tasks: [{
+				id: "5667B3064D8F1F4A",
+				type: "kill",
+				entity: "minecraft:husk",
+				value: 50L
+			}],
+			rewards: [
+				{
+					id: "60DB548F1022890F",
+					type: "item",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "5EEC75AF3B2765DB",
+					type: "command",
+					title: "Auto Command for Reset",
+					command: "/ftbquests change_progress @p reset 2B5E55D1821AAD08",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -3.5d,
+			id: "3504A5892DB65532",
+			tasks: [{
+				id: "2AE8BCD5E45A66CA",
+				type: "item",
+				item: "minecraft:string",
+				count: 64L,
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "325FCF1F965D3076",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "264CDE3C959F5719",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 3504A5892DB65532",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: -3.5d,
+			id: "34C0DC2789C633DE",
+			tasks: [{
+				id: "5526533FD09DF2C8",
+				type: "item",
+				item: "minecraft:gunpowder",
+				count: 64L,
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "2B0A0E2511820266",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "03A85A8B6018A920",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 34C0DC2789C633DE",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: 1.5d,
+			y: -3.5d,
+			id: "7C503E9E9EFF0F33",
+			tasks: [{
+				id: "4CA1FE5946C609FC",
+				type: "item",
+				item: "minecraft:spider_eye",
+				count: 64L,
+				consume_items: true
+			}],
+			rewards: [
+				{
+					id: "0868635C9F566FC8",
+					type: "item",
+					auto: "enabled",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "2AEE368C7D9EB60C",
+					type: "command",
+					title: "Auto Command for Reset",
+					auto: "enabled",
+					command: "/ftbquests change_progress @p reset 7C503E9E9EFF0F33",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: 1.5d,
+			y: -2.0d,
+			id: "4EE16D75BFD4A748",
+			tasks: [{
+				id: "006032E0ACE6E040",
+				type: "kill",
+				entity: "minecraft:cave_spider",
+				value: 50L
+			}],
+			rewards: [
+				{
+					id: "362FF4A5D704E238",
+					type: "item",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "69F32997512FE7E6",
+					type: "command",
+					title: "Auto Command for Reset",
+					command: "/ftbquests change_progress @p reset 4EE16D75BFD4A748",
+					player_command: false
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: -2.0d,
+			id: "781DDBF5BEF2E41D",
+			tasks: [{
+				id: "68E2EED5C5102B1A",
+				type: "kill",
+				entity: "minecraft:spider",
+				value: 50L
+			}],
+			rewards: [
+				{
+					id: "112BADAB721BAE19",
+					type: "item",
+					item: {
+						id: "kubejs:dc_coin",
+						Count: 1b,
+						tag: {
+							display: {
+								Lore: ['{"italic":false,"text":"몹 처치 보상으로 받은 코인입니다."}'],
+								Name: '{"italic":false,"text":"DC 코인 - 몹 처치"}'
+							}
+						}
+					}
+				},
+				{
+					id: "7D1CA6FE6F2A1A54",
+					type: "command",
+					title: "Auto Command for Reset",
+					command: "/ftbquests change_progress @p reset 781DDBF5BEF2E41D",
+					player_command: false
+				}
+			]
+		}
+	]
+}

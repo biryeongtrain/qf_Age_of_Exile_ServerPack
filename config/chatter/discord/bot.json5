@@ -1,6 +1,6 @@
 {
 	// Token used to authenticate against your Discord bot
-	"token": "",
+	"token": "NzI4NTUyNTU4NzUwMzM1MDQ4.Xv8DcQ.nHLjq-hkAkYAprLl6UTP_UVO2uo",
 	// Bot statuses relayed during the lifecycle of the server
 	"status": {
 		// Status while the server is starting

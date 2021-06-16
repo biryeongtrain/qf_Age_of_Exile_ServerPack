@@ -1,0 +1,13 @@
+{
+  "stat_scalings": [
+	{
+      "stat": "light_weapon_damage",
+      "multi": 0.05
+    }
+	],
+  "id": "breath_heal",
+  "base_scaling_type": "NORMAL",
+  "atk_scaling_type": "DOUBLE_AT_MAX_LVL",
+  "attack_scaling": 0.0,
+  "base_val": 5.0
+}

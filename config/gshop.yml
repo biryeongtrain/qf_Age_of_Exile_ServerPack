@@ -1,21 +1,548 @@
 shops:                                                      # a list of sops
-- name: "default"                                           # each shop has a name
+- name: "tier1_skill_gem"                                           # each shop has a name
+  categories:                                               # each shop is divided into categories
+  - name: "오라 스킬 젬 상점"                                           # categories have an icon and a list of entries
+    icon:
+      type: "ITEM_STACK"                                    # type of icons is always ITEM_STACK.
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{display:{Name:'[{\"text\":\"오라 스킬 젬 상점\",\"italic\":false,\"color\":\"aqua\"}]'}},Count:1b}"            # item stacks are given as stringified NBT
+    entries:
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"armor_aura\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"crit_aura\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"dodge_aura\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"ele_res_aura\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"haste_aura\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"hp_reg_aura\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"mana_reg_aura\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+
+  - name: "발동형 스킬 젬 상점"
+    icon:
+      type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",Count:1b}"
+    entries:
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"arrow_barrage\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5   
+    
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"arrow_storm\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"awaken_mana\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+    
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"charge\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"dagger_storm\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 100
+      priceToSell: 10
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"explode_strike\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 100
+      priceToSell: 10
+
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"explosive_arrow\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"fire_bomb\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"fire_breath\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"fire_nova\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"fire_ball\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+    
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"flame_strike\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"focus\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 100
+      priceToSell: 10
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"frost_armor\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"frost_breath\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"frost_nova\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"frost_ball\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"gorgons_gaze\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"imbue\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"meteor\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 100
+      priceToSell: 10
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"multi_shot\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"nature_balm\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"poison_arrow\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"poison_ball\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"poisoned_weapons\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"recoil_shot\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"spear_of_judgement\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"teleport\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"thirst_strike\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"thorn_armor\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"thunder_dash\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"thunder_spear\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+    
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"tidal_strike\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 50
+      priceToSell: 5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"whirlwind\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 75
+      priceToSell: 7.5
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"berserker\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 10
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"slash\",lvl:1,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 100
+      priceToSell: 10
+      
+  - name: "권한 구매"                                        # another category
+    icon:
+      type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:mat/salvage/salvage1\",Count:1b}"
+    entries:
+      - type: "COMMAND"                                            # another type of entry
+        command: "lp user --buyer-- permission set gshop.viewshop.tier2_skill_gem true" # --buyer-- will be replaced with the buyer name
+        icon: "{id:\"mmorpg:mat/salvage/salvage1\",Count:1b,tag:{RepairCost:0,display:{Name:'{\"text\":\"&r10레벨 스킬 젬 상점 오픈\"}'}}}" # These strings can be copied from the `/shopconfigurator export-itemstack` command, with the stack in your hand.
+        priceToBuy: 7500
+
+
+- name: "tier2_skill_gem"                                           # each shop has a name
+  categories:                                               # each shop is divided into categories
+  - name: "&a오라 스킬 젬 상점"                                           # categories have an icon and a list of entries
+    icon:
+      type: "ITEM_STACK"                                    # type of icons is always ITEM_STACK.
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{display:{Name:'[{\"text\":\"오라 스킬 젬 상점\",\"italic\":false,\"color\":\"aqua\"}]'}},Count:1b}"            # item stacks are given as stringified NBT
+    entries:
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"armor_aura\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"crit_aura\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"dodge_aura\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"ele_res_aura\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"haste_aura\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"hp_reg_aura\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"mana_reg_aura\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+
+  - name: "발동형 스킬 젬 상점"
+    icon:
+      type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",Count:1b}"
+    entries:
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"arrow_barrage\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375   
+    
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"arrow_storm\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"awaken_mana\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+    
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"charge\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"dagger_storm\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 5000
+      priceToSell: 500
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"explode_strike\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 5000
+      priceToSell: 2500
+
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"explosive_arrow\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"fire_bomb\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"fire_breath\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"fire_nova\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"fire_ball\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+    
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"flame_strike\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"focus\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 5000
+      priceToSell: 500
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"frost_armor\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"frost_breath\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"frost_nova\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"frost_ball\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"gorgons_gaze\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"imbue\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"meteor\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 5000
+      priceToSell: 500
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"multi_shot\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"nature_balm\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"poison_arrow\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"poison_ball\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"poisoned_weapons\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/dex_skill\",tag:{gem:{random_stats:{size:0},id:\"recoil_shot\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"spear_of_judgement\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"teleport\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"thirst_strike\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"thorn_armor\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"thunder_dash\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/int_skill\",tag:{gem:{random_stats:{size:0},id:\"thunder_spear\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+    
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"tidal_strike\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 2500
+      priceToSell: 250
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"whirlwind\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 3750
+      priceToSell: 375
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"berserker\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 15000
+      priceToSell: 150  
+      
+    - type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:skill_gems/str_skill\",tag:{gem:{random_stats:{size:0},id:\"slash\",lvl:10,exp:0,rar:\"common\",stat_perc:0}},Count:1b}"
+      priceToBuy: 1000
+      priceToSell: 100
+      
+  - name: "권한 구매"                                        # another category
+    icon:
+      type: "ITEM_STACK"
+      stack: "{id:\"mmorpg:mat/salvage/salvage2\",Count:1b}"
+    entries:
+      - type: "COMMAND"                                            # another type of entry
+        command: "lp user --buyer-- permission set gshop.viewshop.tier3_skill_gem true" # --buyer-- will be replaced with the buyer name
+        icon: "{id:\"mmorpg:mat/salvage/salvage2\",Count:1b,tag:{RepairCost:0,display:{Name:'{\"text\":\"&r25레벨 스킬 젬 상점 오픈\"}'}}}" # These strings can be copied from the `/shopconfigurator export-itemstack` command, with the stack in your hand.
+        priceToBuy: 999999
+        
+        
+- name: "selling_item"                                           # each shop has a name
   categories:                                               # each shop is divided into categories
   - name: "items"                                           # categories have an icon and a list of entries
     icon:
       type: "ITEM_STACK"                                    # type of icons is always ITEM_STACK.
-      stack: "{id:\"minecraft:apple\",Count:1b}"            # item stacks are given as stringified NBT
+      stack: "{id:\"campanion:golden_spear\",tag:{Damage:0,display:{Name:'[{\"text\":\"전리품 상점\",\"italic\":false,\"color\":\"aqua\"}]'}},Count:1b}"            # item stacks are given as stringified NBT
     entries:
     - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
-      stack: "{id:\"minecraft:apple\",Count:1b}"
-      priceToBuy: 10                                        # price to buy and sell in gunpowder currency
-      priceToSell: 10
-  - name: "commands"                                        # another category
-    icon:
-      type: "ITEM_STACK"
-      stack: "{id:\"minecraft:stone_pickaxe\",Count:1b,tag:{Damage:0}}"
-    entries:
-      - type: "COMMAND"                                            # another type of entry
-        command: "lp user --buyer-- permission set test.test true" # --buyer-- will be replaced with the buyer name
-        icon: "{id:\"minecraft:stone\",Count:1b,tag:{RepairCost:0,display:{Name:'{\"text\":\"Permission Node: test.test\"}'}}}" # These strings can be copied from the `/shopconfigurator export-itemstack` command, with the stack in your hand.
-        priceToBuy: 100
+      stack: "{id:\"minecraft:rotten_flesh\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 3
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"mobz:rottenflesh\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 3
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"minecraft:egg\",Count:16b}"
+      priceToBuy: 99999
+      priceToSell: 8
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"minecraft:ender_pearl\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 11
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"minecraft:blaze_rod\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 11
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"minecraft:spider_eye\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 3
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"minecraft:bone\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 3
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"mmorpg:mat/salvage/salvage0\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 8
+    
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"mmorpg:mat/salvage/salvage1\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 32
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"mmorpg:mat/salvage/salvage2\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 128
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"mmorpg:mat/salvage/salvage3\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 384
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"mmorpg:mat/salvage/salvage4\",Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 1436
+      
+    - type: "ITEM_STACK"                                    # entries have a type - currently only ITEM_STACK or COMMAND
+      stack: "{id:\"minecraft:poisonous_potato\",tag:{display:{Name:'[{\"text\":\"플레이 타임 보상\",\"italic\":false}]',Lore:['[{\"text\":\"이 아이템을 상점에 판매하세요.\",\"italic\":false}]']}},Count:1b}"
+      priceToBuy: 99999
+      priceToSell: 2500

@@ -3,7 +3,7 @@
   "MAX_LEVEL": 100,
   "NORMAL_STAT_SCALING": {
     "base_scaling": 1.0,
-    "per_level_scaling": 2.0
+    "per_level_scaling": 1.0
   },
   "SLOW_STAT_SCALING": {
     "base_scaling": 1.0,
@@ -14,8 +14,8 @@
     "per_level_scaling": 0.2
   },
   "STAT_REQ_SCALING": {
-    "base_scaling": 2.0,
-    "per_level_scaling": 2.0
+    "base_scaling": 2.5,
+    "per_level_scaling": 4.0
   },
   "TALENT_POINTS_AT_MAX_LEVEL": 200.0,
   "STAT_POINTS_PER_LEVEL": 4.0,

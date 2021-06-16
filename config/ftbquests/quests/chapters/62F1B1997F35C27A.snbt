@@ -1,0 +1,104 @@
+{
+	id: "62F1B1997F35C27A",
+	group: "",
+	order_index: 3,
+	filename: "62F1B1997F35C27A",
+	title: "도전 과제",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "시 작",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "diamond",
+			subtitle: "사냥, 루팅 그리고 탐험",
+			description: [
+				"이 구역은 Age of Exile 모드팩에 있는 여러가지 도전과제들을 소개하는 내역입니다.",
+				"",
+				"여러 보스들, 장비들을 찾아 탐험해보세요.",
+				""
+			],
+			size: 1.5d,
+			optional: true,
+			id: "58428BFA210B745B",
+			tasks: [{
+				id: "66582E26D79A16F2",
+				type: "checkmark",
+				title: "확인했다면 눌러주세요."
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -1.5d,
+			dependencies: ["58428BFA210B745B"],
+			hide: true,
+			id: "1F6ECFA0D1AC2977",
+			tasks: [{
+				id: "1E106E26F7F4E234",
+				type: "kill",
+				entity: "dungeonsmod:ironslime",
+				value: 1L
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -2.5d,
+			dependencies: ["58428BFA210B745B"],
+			hide: true,
+			id: "7412944A76EC0B6C",
+			tasks: [{
+				id: "36ED5AF121AC224A",
+				type: "kill",
+				entity: "dungeonsmod:deserted",
+				value: 1L
+			}]
+		},
+		{
+			x: 2.25d,
+			y: 0.0d,
+			dependencies: ["58428BFA210B745B"],
+			hide: true,
+			id: "34BF4FFB32B1236D",
+			tasks: [{
+				id: "3472A9FCEFA8D821",
+				type: "kill",
+				entity: "dungeonsmod:kraken",
+				value: 1L
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -3.5d,
+			dependencies: [
+				"7412944A76EC0B6C",
+				"1F6ECFA0D1AC2977",
+				"34BF4FFB32B1236D"
+			],
+			hide: true,
+			id: "6432294D94D28B97",
+			tasks: [{
+				id: "20AC54B63EB2AAC8",
+				type: "kill",
+				entity: "dungeonsmod:king",
+				value: 1L
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -1.5d,
+			dependencies: [
+				"34BF4FFB32B1236D",
+				"1F6ECFA0D1AC2977",
+				"7412944A76EC0B6C"
+			],
+			hide: true,
+			id: "51F8FC95941A73C7",
+			tasks: [{
+				id: "5A10639FEAED5864",
+				type: "kill",
+				entity: "dungeonsmod:crawler",
+				value: 1L
+			}]
+		}
+	]
+}

@@ -13,24 +13,6 @@
 						stat_perc: 10,
 						rar: "common",
 						lvl: 1,
-						id: "thunder_spear",
-						exp: 0,
-						random_stats: {
-							size: 0
-						}
-					}
-				}
-			}
-		},
-		{
-			item: {
-				id: "mmorpg:skill_gems/int_skill",
-				Count: 1b,
-				tag: {
-					gem: {
-						stat_perc: 10,
-						rar: "common",
-						lvl: 1,
 						id: "frostball",
 						exp: 0,
 						random_stats: {

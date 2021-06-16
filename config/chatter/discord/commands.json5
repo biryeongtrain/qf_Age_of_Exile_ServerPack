@@ -6,7 +6,9 @@
 	// If defined, exposes a command to display help
 	"helpWord": "help",
 	// Identifiers for users within Discord to whom to grant all permissions
-	"admins": [],
+	"admins": [
+		"612905451906138143"
+	],
 	// Feedback provided to the user who triggered a command
 	"messages": {
 		// The error message used when the server is unavailable
